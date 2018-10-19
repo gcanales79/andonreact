@@ -8,6 +8,9 @@ import decode from "jwt-decode";
 import Graph from "./views/Graph";
 import Usuario from "./views/Usuario";
 import TablaOperador from "./views/TablaOperador"
+import TablaMaquina from "./views/TablaMaquina"
+import TablaFalla from "./views/TablaFalla"
+
 
 const checkAuth=()=>{
     const token=localStorage.getItem("token")
@@ -44,6 +47,8 @@ ReactDOM.render(
         <PrivateRoute path="/graph" component={Graph}/>;
         <PrivateRoute path="/usuario" component={Usuario}/>;
         <PrivateRoute path="/operador" component={TablaOperador}/>;
+        <PrivateRoute path="/maquina" component={TablaMaquina}/>
+        <PrivateRoute path="/falla" component={TablaFalla}/>
       
     </Switch>
 </HashRouter>,

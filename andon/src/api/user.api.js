@@ -34,7 +34,32 @@ export default {
     //Borrar Operador
     deleteOperador:function(id){
         return axios.delete(process.env.REACT_APP_API_URL + "/borrar/operador/"+id)
+    },
+    //Agregar Maquinas
+    postMaquina:function(maquina){
+        return axios.post(process.env.REACT_APP_API_URL + "/api/maquinas",maquina)
+    },
+    //Obtener Maquinas
+    getMaquina:function(){
+        return axios.get(process.env.REACT_APP_API_URL + "/api/maquinas")
+    },
+    //Borrar Maquina
+    deleteMaquina:function(id){
+        return axios.delete(process.env.REACT_APP_API_URL + "/borrar/maquina/"+id)
+    },
+    //Agregar Maquinas
+    postFalla:function(falla){
+        return axios.post(process.env.REACT_APP_API_URL + "/api/falla",falla)
+    },
+    //Obtener Maquinas
+    getFalla:function(){
+        return axios.get(process.env.REACT_APP_API_URL + "/api/falla")
+    },
+    //Borrar Maquina
+    deleteFalla:function(id){
+        return axios.delete(process.env.REACT_APP_API_URL + "/borrar/falla/"+id)
     }
+
 
  
   };

@@ -24,6 +24,8 @@ class Header extends Component {
                             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a className="dropdown-item" href="/#/usuario">Agregar Usuario</a>
                                 <a className="dropdown-item" href="/#/operador">Agregar Operador</a>
+                                <a className="dropdown-item" href="/#/maquina">Agregar Maquina</a>
+                                <a className="dropdown-item" href="/#/falla">Agregar Falla</a>
                                 
                             </div>
                         </li>
